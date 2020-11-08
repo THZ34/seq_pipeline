@@ -1,4 +1,5 @@
 CHANGES
 =======
 
+* build: invoke of crispr\_screening.py
 * build: add cripsr-screening preprocess

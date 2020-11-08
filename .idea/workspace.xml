@@ -2,14 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7aa253c-c2a3-4f24-bd6c-c5dae3ad04c9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/AUTHORS" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ChangeLog" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pipeline/preprocess/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipeline/analysis/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipeline/analysis/_crispr_screening.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipeline/preprocess/_shell_command_generater.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipeline/preprocess/rscript/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipeline/preprocess/rscript/ensg_to_gene.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipeline/preprocess/shell_template/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipeline/preprocess/shell_template/_align.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipeline/preprocess/shell_template/_chip.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipeline/preprocess/shell_template/_quality_control.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipeline/preprocess/shell_template/_recipe.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pipeline/preprocess/shell_template/_rna.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChangeLog" beforeDir="false" afterPath="$PROJECT_DIR$/ChangeLog" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pipeline/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipeline/preprocess/crispr_screening.py" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/preprocess/_crispr_screening.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pipeline/test/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline/preprocess/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/preprocess/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pipeline/preprocess/_crispr_screening.py" beforeDir="false" afterPath="$PROJECT_DIR$/pipeline/preprocess/shell_template/_crispr_screening.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/test.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,7 +43,13 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="/data/active_data/thz/wangyin/T-36-NF-kB-20201029" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pipeline/preprocess/shell_template" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -47,6 +62,34 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="seq_pipeline" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.test" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />

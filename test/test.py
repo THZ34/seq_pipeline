@@ -1,3 +1,12 @@
-import pipeline
+from pipeline.preprocess import shell_template
+from pipeline.preprocess import shell
 
-pipeline.pp
+samples = [('TEST_Sample0_1', 'TEST_Sample0_2'), 'TEST_Sample1', 'TEST_Sample2', 'TEST_Sample3', 'TEST_Sample4']
+suffix = ('_1.fq.gz', '_2.fq.gz')
+library = 'library.txt'
+sgrna_len = '20'
+control_sgrna = 'AAVS1'
+
+command_list = shell(samples,shell_template.mageck_count,library=library,suffix=suffix)
+command_list = shell(samples,shell_template.fastp,suffix=suffix)
+command_list = shell(samples,shell_template.htseq,)
