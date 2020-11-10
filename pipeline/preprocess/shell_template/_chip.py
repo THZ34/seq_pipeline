@@ -1,11 +1,12 @@
 
 # macs2 cell peak
-def macs2(sample,kwargs):
+def macs2_cuttag(sample,kwargs):
     """Shell command template
     Call peak with MACS2
+    This template for cut&tag
 
     :param sample:
-    :return:
+    :return: command
     """
     command = 'macs2 callpeak ' \
               '-t sam/%s.sam ' \

@@ -1,5 +1,8 @@
+"""
+Shell command template
+"""
 from ._quality_control import *
-from ._recipe import cuttag, crispr_screening
+from ._recipe import *
 from ._crispr_screening import *
 from ._align import *
 from ._chip import *

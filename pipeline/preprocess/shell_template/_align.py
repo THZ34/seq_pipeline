@@ -3,12 +3,13 @@ def bwa(samples, suffix, reference):
 
 
 def bowtie2_cuttag(sample, kwargs):
-    """
+    """Alignment with bowtie2
+    This template for cut&tag
 
-    :param sample:
-    :param suffix:
-    :param reference:
-    :return:
+    :param sample: sample name
+    :param suffix: suffix
+    :param reference: bowtie2 reference (http://refgenomes.databio.org/)
+    :return: command
     """
     suffix = kwargs['suffix']
     reference = kwargs['reference']
@@ -42,9 +43,8 @@ def bowtie2_atac(samples, suffix, reference):
 def sam_sort(sample, kwargs):
     """Shell command template
     Convert sam to bam, then sort and make index
-    :param sample:
-    :param kwargs:
-    :return:
+    :param sample: sample name
+    :return: command
     """
     command = 'samtools view -b sam/%s.sam | samtools sort > sam/%s.sorted.bam \n' \
               'samtools index sam/%s.sorted.bam' % (sample, sample, sample)
@@ -57,8 +57,7 @@ def bam_coverage(sample, kwargs):
     Calculate reads coverage
 
     :param sample:
-    :param kwargs:
-    :return:
+    :return: command
     """
     command = 'bamCoverage -b sam/%s.sorted.bam -o sam/%s.bigwig -of bigwig' % (sample, sample)
     return command
@@ -69,9 +68,10 @@ def hisat2(sample, kwargs):
     """Shell command template
     Alignment with hisat2
 
-    :param sample:
-    :param reference:
-    :return:
+    :param sample: sample name
+    :param suffix: suffix
+    :param reference: hisat2 reference
+    :return: command
     """
     suffix = kwargs['suffix']
     reference = kwargs['reference']

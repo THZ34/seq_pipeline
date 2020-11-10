@@ -3,9 +3,9 @@ def salmon(sample, kwargs):
     """Command Template:
     Transcript quantification by salmon, need quality controled .fastq file
 
-    :param sample:
-    :param suffix:
-    :param reference:
+    :param sample: sample name
+    :param suffix: suffix
+    :param reference: salmon reference (http://refgenomes.databio.org/)
     :return:
     """
     suffix = kwargs['suffix']
@@ -14,9 +14,9 @@ def salmon(sample, kwargs):
               '-i %s ' \
               '-l A ' \
               '--validateMappings ' \
-              '-1 %s_qc%s ' \
-              '-2 %s_qc%s ' \
-              '-o salmon/%s &' % (reference, sample, suffix[0], sample, suffix[1], sample)
+              '-1 fastqs/%s_qc%s ' \
+              '-2 fastqs/%s_qc%s ' \
+              '-o salmon/%s'% (reference, sample, suffix[0], sample, suffix[1], sample)
     return command
 
 
@@ -38,3 +38,6 @@ def htseq(samples, kwargs):
               '-f sam ' \
               '-n 60 %s.sam' % ('.sam '.join(samples))
     return command
+
+def kallisto(sample, kwargs):
+    pass

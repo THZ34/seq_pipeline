@@ -9,7 +9,7 @@ def mageck_count(samples, kwargs):
     :param sgrna_len: Length of sgRNA
     :param trim: Length for trim-5
     :param control_sgrna: Gene name of control sgRNA
-    :return: mageck command
+    :return: command
     """
 
     # args parse

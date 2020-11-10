@@ -1,2 +1,7 @@
-from pipeline.preprocess.shell_template._recipe import cuttag, crispr_screening
-from ._shell_command_generater import shell
+"""
+Preprocess package
+"""
+
+from ._shell_command_generater import *
+from .rscript import *
+from .shell_template import *

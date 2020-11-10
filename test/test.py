@@ -7,6 +7,3 @@ library = 'library.txt'
 sgrna_len = '20'
 control_sgrna = 'AAVS1'
 
-command_list = shell(samples,shell_template.mageck_count,library=library,suffix=suffix)
-command_list = shell(samples,shell_template.fastp,suffix=suffix)
-command_list = shell(samples,shell_template.htseq,)
