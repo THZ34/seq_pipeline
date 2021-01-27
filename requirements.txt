@@ -1,1 +1,2 @@
-pycman
+pacman
+plotnine==0.7.1

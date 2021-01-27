@@ -1,4 +1,4 @@
-from rpy2 import robjects
+# from rpy2 import robjects
 import pandas as pd
 from itertools import combinations
 
@@ -33,8 +33,8 @@ def tximport(samples, ensttogene='ensttogene.csv', quant_type='salmon'):
     colnames(counts) = sample_list
     write.csv(counts,'%s/%s_counts.csv')""" % (
         ensttogene, "','".join(sample_list), "','".join(grp_list), quant_type, quant_type, quant_type)
-    robjects.r(r_command)
-    return pd.read_csv('%s/%s_counts.csv' % (quant_type, quant_type), index_col=0)
+    # robjects.r(r_command)
+    return r_command
 
 
 def deg(samples, ensttogene='ensttogene.csv', quant_type='salmon'):

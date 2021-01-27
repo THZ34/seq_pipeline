@@ -7,7 +7,7 @@ def shell(samples, template, **kwargs):
     :return: list of command
     """
 
-    if template.__name__ == 'mageck_count':
+    if template.__name__ in ['mageck_count', 'bwa']:
         command_list = template(samples, kwargs)
     else:
         command_list = []

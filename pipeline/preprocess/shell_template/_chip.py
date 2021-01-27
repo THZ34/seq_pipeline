@@ -1,6 +1,5 @@
-
 # macs2 cell peak
-def macs2_cuttag(sample,kwargs):
+def macs2_cuttag(sample, kwargs):
     """Shell command template
     Call peak with MACS2
     This template for cut&tag
@@ -18,3 +17,6 @@ def macs2_cuttag(sample,kwargs):
 
     return command
 
+
+def homer(samples):
+    command = """macs2/findMotifsGenome.pl %s_summit.bed hg38 homer"""
